@@ -1,0 +1,22 @@
+{{ define "main" }}
+
+{{ .Content }}
+
+<div class="container-galeri">
+  <h1>{{ .Title }}</h1>
+
+  <div class="grid-galeri">
+    {{ range .Params.galeri_item }}
+    <div class="card-galeri">
+      <div class="img-wrapper">
+        <img src="{{ .foto }}" alt="{{ .judul }}" loading="lazy">
+      </div>
+      <div class="info-galeri">
+        <h3>{{ .judul }}</h3>
+        <p>{{ .deskripsi }}</p>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

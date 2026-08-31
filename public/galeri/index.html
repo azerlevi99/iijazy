@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri</title>
+
+    
+    <link rel="shortcut icon" href="/images/logo-iijazy.png" type="image/x-icon">
+
+    
+   <link rel="stylesheet" href="/style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body id="beranda">
+
+    
+    <div class="my-navbar">
+            <div class="container">
+                <div class="navbar-box">
+                    <ul class="menu">
+                        <li><a href="/#tentang">Tentang</a></li>
+                        <li><a href="/#kelas">Kurikulum</a></li>
+                         <li><a href="/#artikel">Berita</a></li>
+                        <li><a href="/#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    <main>
+        
+
+<style>
+  .container-galeri {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+  .container-galeri h1{
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .grid-galeri {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+
+  .card-galeri {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .card-galeri:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-galeri img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+  }
+
+  .info-galeri {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    .grid-galeri {
+      grid-template-columns: repeat(1,1fr);
+    }
+
+    .card-galeri img {
+      width: 100%;
+      height: auto;
+      max-height: 300px;
+      object-fit: contain;
+    }
+  }
+
+</style>
+
+<div class="container-galeri">
+  <h1>Galeri</h1>
+
+  <div class="grid-galeri">
+    
+    <div class="card-galeri">
+      <div class="img-wrapper">
+        <img src="foto-asrama-1.webp" alt="Asrama" loading="lazy">
+      </div>
+      <div class="info-galeri">
+        <h3>Asrama</h3>
+        <p>Asrama tampak dari depan</p>
+      </div>
+    </div>
+    
+    <div class="card-galeri">
+      <div class="img-wrapper">
+        <img src="foto-asrama-2.webp" alt="Asrama" loading="lazy">
+      </div>
+      <div class="info-galeri">
+        <h3>Asrama</h3>
+        <p>Ranjang-ranjang santri di lantai 2 Asrama</p>
+      </div>
+    </div>
+    
+    <div class="card-galeri">
+      <div class="img-wrapper">
+        <img src="foto-asrama-3.webp" alt="Asrama" loading="lazy">
+      </div>
+      <div class="info-galeri">
+        <h3>Asrama</h3>
+        <p>Lantai 2 Asrama dengan balkon yang menghadap ke pepohonan</p>
+      </div>
+    </div>
+    
+    <div class="card-galeri">
+      <div class="img-wrapper">
+        <img src="foto-asrama-4.webp" alt="Asrama" loading="lazy">
+      </div>
+      <div class="info-galeri">
+        <h3>Asrama</h3>
+        <p>Tangga menuju lantai 2 dilihat dari bawah</p>
+      </div>
+    </div>
+    
+    <div class="card-galeri">
+      <div class="img-wrapper">
+        <img src="foto-kamar-santri-1.jpeg" alt="Asrama" loading="lazy">
+      </div>
+      <div class="info-galeri">
+        <h3>Asrama</h3>
+        <p>Tangga menuju lantai 2 dilihat dari bawah</p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+    </main>
+
+    
+    <footer id="kontak">
+        <p>&copy; Copyright by <span> Markaz Imam Samannudi </span> </p>
+        <div class="social">
+            <a href="https://www.instagram.com/markazimamsamannudi/?hl=id" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://www.threads.com/@markazimamsamannudi" target="_blank">
+                <i class="fa-brands fa-square-threads"></i>
+            </a>
+            <a href="https://chat.whatsapp.com/Lx3Qso2LVTuBqiolxyuqjY?mode=gi_t" target="_blank">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

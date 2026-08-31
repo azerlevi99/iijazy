@@ -1,0 +1,127 @@
+{{ define "main" }}
+<style>
+    .berita-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .berita-title {
+        font-size: 2.2rem;
+        color: #1a1a1a;
+        margin-bottom: 10px;
+    }
+
+    .berita-divider {
+        margin: 20px 0;
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+
+    .berita-card {
+        margin-bottom: 30px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+    }
+
+    .berita-card-title {
+        margin-bottom: 8px;
+    }
+
+    .berita-card-title a {
+        text-decoration: none;
+        color: #1a1a1a;
+        transition: color 0.2s ease;
+    }
+
+    .berita-card-title a:hover {
+        color: #00008B;
+    }
+
+    .berita-date {
+        color: #666;
+        display: block;
+        margin-bottom: 12px;
+        font-size: 0.9rem;
+    }
+
+    .berita-tags {
+    margin-bottom: 10px;
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    }
+
+    .tag-badge {
+        background-color: #f0f4f8;
+        color: #00008B;
+        padding: 3px 10px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    .tag-badge:hover {
+        background-color: #00008B;
+        color: #fff;
+    }
+
+    .berita-summary {
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    .berita-link {
+        color: #00008B;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .berita-link:hover {
+        text-decoration: underline;
+    }
+
+    .berita-empty {
+        color: #666;
+    }
+</style>
+
+<section class="berita-container">
+    <h1 class="berita-title">{{ .Title }}</h1>
+    <hr class="berita-divider">
+
+    <div class="berita-list">
+        {{ range .Pages }}
+        <article class="berita-card">
+            <h2 class="berita-card-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            
+            <small class="berita-date">
+                Tanggal Terbit: {{ .Date.Format "02 January 2006" }}
+            </small>
+
+            {{ with .Params.tags }}
+            <div class="berita-tags">
+                {{ range . }}
+                <a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag-badge">#{{ . }}</a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+            <p class="berita-summary">
+                {{ .Summary }}
+            </p>
+
+            <a href="{{ .RelPermalink }}" class="berita-link">
+                Baca Selengkapnya &rarr;
+            </a>
+        </article>
+        {{ else }}
+        <p class="berita-empty">Belum ada berita yang diterbitkan.</p>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

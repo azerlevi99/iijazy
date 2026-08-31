@@ -1,0 +1,313 @@
+{{ define "main" }}
+<style>
+  .header-portal-santri {
+    text-align: center; 
+    margin: 50px 0;
+  }
+
+  .header-portal-santri img {
+    width: 100px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+  }
+
+  .header-portal-santri h2 {
+    margin-bottom: 5px; 
+    margin-top: 30px;
+  }
+
+  .header-portal-santri p {
+    color: #666; 
+    margin: 0;
+  }
+
+
+  .profile-card {
+    display: flex; 
+    flex-direction: column; 
+    text-align: center; 
+    gap: 20px; 
+    align-items: center; 
+    background: #f9fafb; 
+    padding: 30px; 
+    border-radius: 12px; 
+    margin-bottom: 30px; 
+    border: 1px solid #e5e7eb;
+  }
+
+  .profile-bio {
+    background-color:#f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .bio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 14px;
+  }
+
+  .bio-table td {
+    padding: 3px 5px;
+    vertical-align: top;
+  }
+
+  .bio-table td label {
+    font-weight: bold;
+    color: #334155;
+    white-space: nowrap; 
+    width: 150px;
+  }
+
+  .bio-table td.colon {
+    width: 10px;
+    text-align: center;
+  }
+
+
+  .table-container {
+    width: 100%;
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+  }
+  .laporan-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  .laporan-table th {
+    position: sticky;
+    top: 0;
+    background-color: #f8fafc;
+    padding: 10px;
+    border-bottom: 2px solid #e2e8f0;
+    text-align: left;
+    z-index: 5;
+  }
+  .laporan-table td {
+    padding: 10px;
+    border-bottom: 1px solid #f1f5f9;
+    word-wrap: break-word;
+  }
+
+  .laporan-table td:nth-child(5) {
+    text-align: center;
+  }
+
+  .wrapper-table-keterangan {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  width: 100%;
+  max-height: 220px;  
+  overflow-y: auto;  
+  margin: 10px 0 50px 0; 
+  }
+
+  .table-keterangan {
+  width: 100%; 
+  font-family: sans-serif; 
+  font-size: 14px; 
+  border-collapse: collapse;
+  margin: 0;
+  }
+
+  .table-keterangan th.head-keterangan {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 10px;
+    background-color: #f8fafc;
+    position: sticky;
+    top: 0;
+  }
+
+  .table-keterangan th {
+    border-bottom: 2px solid #e2e8f0;
+    padding: 10px 12px;
+    background-color: #f8fafc;
+    text-align: left;
+    position: sticky;
+    top: 0;
+  }
+ 
+  .table-keterangan th:first-child{
+    width: 30%;
+  }
+
+  .table-keterangan th:last-child{
+    width: 70%;
+  }
+  .table-keterangan td {
+    border-bottom: 2px solid #e2e8f0;
+    padding: 10px 12px;
+    text-align: left;
+  }
+
+  .wrapper-file {
+    text-align: center;
+    margin: 20px 0 40px 0;
+  }
+
+  .wrapper-file p {
+    font-size: 14px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+
+</style>
+
+<article class="portal-murid" style="max-width: 80%; margin: 10px auto;">
+  
+  <div class="header-portal-santri">
+    <img src="/images/logo-iijazy.png" alt="Lambang IIJAZY">
+    <h2>Pesantren Tahfiz Imam Ibnul Jazary</h2>
+    <p>Catatan Bulanan Digital</p>
+  </div>
+
+  <div class="profile-card">
+    {{ if .Params.foto }}
+      <img src="{{ .Params.foto }}" alt="{{ .Title }}" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;object-position: center;">
+    {{ end }}
+    
+    <div class="profile-bio">
+      <h1 style="margin: 0 0 8px 0;">{{ .Title }}</h1>
+      <table class="bio-table">
+          <tr>
+            <td class="label"> Asal </td>
+            <td class="colon"> : </td>
+            <td> {{ .Params.asal}} </td>
+          </tr>
+          <tr>
+            <td class="label"> Kegiatan </td>
+            <td class="colon"> : </td>
+            <td> {{ .Params.kegiatan}} </td>
+          </tr>
+          <tr>
+            <td class="label"> Angkatan </td>
+            <td class="colon"> : </td>
+            <td> {{ .Params.angkatan}} </td>
+          </tr>
+          <tr>
+            <td class="label"> Pembimbing </td>
+            <td class="colon"> : </td>
+            <td> {{ .Params.pembimbing}} </td>
+          </tr>
+          <tr>
+            <td class="label"> Bergabung </td>
+            <td class="colon"> : </td>
+            <td> {{ .Params.bergabung}} </td>
+          </tr>
+          <tr>
+            <td class="label"> Status </td>
+            <td class="colon"> : </td>
+            <td>
+              {{ if eq .Params.status "Aktif" }}
+                <strong style="color: #16a34a;">{{ .Params.status }}</strong>
+              {{ else if eq .Params.status "Nonaktif" }}
+                <strong style="color: #dc2626;">{{ .Params.status }}</strong>
+              {{ else }}
+                <strong>{{ .Params.status }}</strong>
+              {{ end }}
+            </td>
+          </tr>
+      </table>
+    </div>
+  </div>
+  
+  <div class="table-container">
+    <table class="laporan-table">
+      <thead>
+        <tr>
+          <th>Bulan</th>
+          <th>Tanggal</th>
+          <th>Jenis Laporan</th>
+          <th>Rincian Laporan</th>
+          <th> Persenan </th>
+          <th>Pencapaian Target (1 semester) </th>
+          <th>Nilai</th>
+          <th>Catatan Laporan</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{ range .Params.laporan }}
+        <tr>
+          <td> {{ .bulan }} </td>
+          <td> {{ .tanggal }} </td>
+          <td> {{ .jenis_laporan }} </td>
+          <td> {{ .rincian_laporan }} </td>
+          <td> {{ .persenan }} </td>
+          <td> {{ .target }} </td>
+          <td> {{ .nilai }} </td>
+          <td> {{ .catatan_laporan }} </td>
+        </tr>
+        {{ end }}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="wrapper-table-keterangan">
+      <table class="table-keterangan"> 
+      <thead>
+        <tr>
+          <th colspan="2" class="head-keterangan">
+            Keterangan Target Tahfiz
+          </th>
+        </tr>
+        <tr>
+          <th> Bulan </th>
+          <th> Target </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td> Juli </td>
+          <td> QS. Al-Kahf ayat 4 (Ang. 7) <br> QS. Al-Baqarah ayat 210  (Ang. 8) </td>
+        </tr>
+        <tr>
+          <td> Agustus </td>
+          <td> QS. Al-Anbiya ayat 44 (Ang. 7) <br> QS. Ali 'Imran ayat 115 (Ang. 8) </td>
+        </tr>
+        <tr>
+          <td> September </td>
+          <td> QS. An-Nur ayat 58 (Ang. 7) <br> QS. An-Nisa ayat 113 (Ang. 8)</td>
+        </tr>
+        <tr>
+          <td> Oktober </td>
+          <td> QS. Al-Qashash ayat 35 (Ang. 7) <br> QS. Al-An'am ayat 8 (Ang. 8)</td>
+        </tr>
+        <tr>
+          <td> November </td>
+          <td> QS. Ar-Rum ayat 15 (Ang. 7) <br> QS. Al-An'am ayat 165 (Ang. 8)</td>
+        </tr>
+        <tr>
+          <td> Desember </td>
+          <td> QS. Al-Ahzab ayat 30 (Ang. 7) <br> QS. Al-A'raf ayat 87 (Ang. 8)</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="wrapper-file">
+      <p> Lihat Rapor dan Sertifikat </p>
+      {{ if .Params.pdf_url }}
+          <a href="{{ .Params.pdf_url }}" target="_blank" style=" display: inline-block; background: #2e7d32; color: white; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: bold; font-size: 14px; margin-top: 5px;">
+          📄 Lihat PDF
+          </a>
+      {{ end }}
+    </div>
+
+</article>
+{{ end }}

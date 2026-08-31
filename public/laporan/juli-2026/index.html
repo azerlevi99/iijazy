@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Bulanan Kegiatan &amp; Keuangan - Agustus 2026</title>
+
+    
+    <link rel="shortcut icon" href="/images/logo-iijazy.png" type="image/x-icon">
+
+    
+   <link rel="stylesheet" href="/style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body id="beranda">
+
+    
+    <div class="my-navbar">
+            <div class="container">
+                <div class="navbar-box">
+                    <ul class="menu">
+                        <li><a href="/#tentang">Tentang</a></li>
+                        <li><a href="/#kelas">Kurikulum</a></li>
+                         <li><a href="/#artikel">Berita</a></li>
+                        <li><a href="/#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    <main>
+        
+    <style>
+        
+        .judul {
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            max-height: 500px; 
+            overflow-y: auto;
+        }
+
+        table {
+            width:100%; 
+            border-collapse: collapse; margin-top: 20px;
+        }
+
+        thead tr {
+            background-color: #f8f9fa; border-bottom: 2px solid #dee2e6; 
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        thead th {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        thead th:nth-child(1) {
+            width: 20px;
+        }
+
+        thead th:nth-child(2) {
+            width: 20px;
+        }
+
+        thead th:nth-child(3) {
+            width: 500px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        tbody td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody td img {
+            width: 100px; 
+            height: 100px; 
+            object-fit: cover; 
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .capaian img {
+            width: 300px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        tbody td .tercapai {
+            background: #2e7d32; 
+            color: white; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 12px;
+        }
+
+        tbody td .tidak-tercapai {
+            background: #FF4D4D; 
+            color: black; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 12px;
+        }
+
+        .judul-2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .table-2 thead th:nth-child(1){
+            width: 200px;
+        }
+
+        .table-2 thead th:nth-child(4){
+            width: 200px;
+        }
+        .table-2 thead th:nth-child(2){
+            width: 400px;
+        }
+        .table-2 thead th:nth-child(3){
+            width: 70px;
+        }
+
+        .table-3 thead th:nth-child(1) {
+            width: 400px;
+        }
+
+        .table-3 thead th:nth-child(2) {
+            width: 400px;
+        }
+
+        .laporan-content ul ul, .laporan-content ol ul {
+            padding-left: 35px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+
+        .laporan-content ol > li,
+        .laporan-content p:has(+ ol) {
+        margin-top: 24px;
+        }
+
+        .laporan-content > ol > li {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container-btn-print {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-print {
+            display: inline-block;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+            background-color: #1B4332;
+            border: 1px solid #1B4332;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .btn-print:hover {
+            background-color: #2d8560;
+            border-color: #2d8560;
+        }
+
+        .btn-print:active {
+            background-color: white;
+            color: black;
+            transform: translateY(1px);
+        }
+
+        @media print {
+         
+            @page {
+                size: A4 Landscape;
+                margin: 8mm;
+            } 
+
+            html, body, div, main, .container {
+                width: 100% !important;
+                max-width: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: visible !important;
+            }
+
+            main, .container, .laporan-content {
+                width: 80% !important;
+                max-width: 80% !important;
+                margin: 0 auto !important;
+                padding: 0 !important;
+                overflow: visible !important;
+            }
+
+             
+            .table-responsive, div[class*="table"], div[style*="overflow"] {
+                overflow: visible !important;
+                height: auto !important;
+                max-height: none !important;
+            }
+
+             
+            table {
+                width: 100% !important;
+                table-layout: auto !important;
+                border-collapse: collapse !important;
+            }
+
+            thead tr {
+                position: static !important;
+            }
+
+            th, td {
+                white-space: normal !important;
+                padding: 6px !important;
+                font-size: 11px !important;
+            }
+
+             
+            button, nav, footer, .no-print, header {
+                display: none !important;
+            }
+
+            header, .header, h1, h2, h3, h4 {
+                position: static !important;
+                margin-top: 20px !important;
+                margin-bottom: 20px !important;
+                clear: both !important;
+            }
+
+            h1, h2, h3, .judul-1, .judul-2 {
+                page-break-after: avoid !important;
+                break-after: avoid !important;
+            }
+
+            tr {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+        }
+
+        .nav-bulan-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .btn-nav {
+            padding: 8px 16px;
+            background-color: #1B4332;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-nav:hover {
+            background-color: #2d6a4f;
+        }
+
+
+        .bulan-aktif {
+            font-weight: bold;
+            font-size: 16px;
+            color: #1B4332;
+        }
+
+    </style>
+
+    <div class="header-laporan" style="text-align: center; margin-bottom: 30px;">
+        
+        <img src="/images/logo-iijazy-background.png" alt="Logo Pesantren" style="max-width: 100px; height: auto; margin-bottom: 10px;">
+        <h2 style="margin: 0; text-transform: uppercase;">PESANTREN TAHFIZ IMAM IBNUL JAZARY</h2>
+        <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">Laporan Resmi Operasional & Kegiatan</p>
+        <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">Juli 1016</p>
+        <hr style="margin-top: 15px; border: 0; border-top: 2px solid #333;">
+    </div>
+
+    <section class="container" style="padding: 40px 20px;">
+        
+        <div class="laporan-content">
+            <h2 class= "judul">A. Capaian Tahfiz</h2>
+<div class="table-responsive">
+  <table>
+  <thead>
+    <tr>
+      <th>Foto</th>
+      <th>Nama</th>
+      <th>Capaian Target</th>
+      <th>Keterangan Target</th>
+      <th>Nilai</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <img src="/images/foto-affan.jpg" alt="Foto Affan">
+      </td>
+      <td>Affan Ahzami Rahmat</td>
+      <td class = "capaian"> <img src="/images/affan-juli-2026.png" alt="Capaian Affan"></td>
+      <td><span class= "tidak-tercapai">Tidak tercapai</span></td>
+      <td>42/100</td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-avril.jpeg" alt="Foto avril">
+      </td>
+      <td>Avril Calviandt Sabda Muhammad</td>
+      <td class="capaian"><img src="/images/avril-juli-2026.png" alt="avril-juli-2026"></td>
+      <td><span class= "tercapai">Tercapai</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-daffa.jpg" alt="Foto Daffa">
+      </td>
+      <td>Daffa Maulfi Sadath</td>
+      <td class="capaian"><img src="/images/daffa-juli-2026.png" alt="daffa-juli-2026"></td>
+      <td><span class= "tercapai">Tercapai</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-hanzholah.jpg" alt="Foto Hanzholah">
+      </td>
+      <td>Hanzholah Anshori</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-isa.jpg" alt="Foto Isa">
+      </td>
+      <td>Isa Ibnu Rizal</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-adlu.jpg" alt="Foto Adlu">
+      </td>
+      <td>Maulana Adlu Insan Fathan</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-samil.jpg" alt="Foto Samil">
+      </td>
+      <td>Muhamad Samil Basayef</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-aidir.jpg" alt="Foto Aidir">
+      </td>
+      <td>Muhammad Aidir Ar Rahman</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-syakir.jpg" alt="Foto Syakir">
+      </td>
+      <td>Muhammad Ikhsan Syakir</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-nuskhi.jpg" alt="Foto Nuskhi">
+      </td>
+      <td>Nuskhi Khasyina</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-zilal-asysyuhada.jpg" alt="Foto Zilal Asy-Syuhada">
+      </td>
+      <td>Zilal Assyuhada'</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+    <tr>
+      <td>
+        <img src="/images/foto-zilal-ropikoin.jpg" alt="Foto Zilal Ropi Koin">
+      </td>
+      <td>Zilal Ropi Koin</td>
+      <td></td>
+      <td><span>Sangat Baik</span></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<hr>
+<h2 class="judul-2">B. Capaian Mata Kuliah Lainnya </h2>
+<div class="table-responsive">
+  <table class="table-2">
+    <thead>
+      <tr>
+        <th>Mata Kuliah</th>
+        <th>Pokok Pembahasan</th>
+        <th>Capaian Target</th>
+        <th>Guru</th>
+        <th>Persentase Kehadiran Guru</th>
+        <th>Catatan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Bahasa Arab 1</td>
+        <td>Mukaddimah Ilmu Tajwid - Bait 8</td>
+        <td>20%</td>
+        <td>
+          <div class="foto-dan-desc"> 
+            <img src="/images/foto-teuku-reza.png" alt="Foto Teuku Reza">
+            <p>Ust. Teuku Reza Pahlevi, B.A.</p>
+          </div>
+        </td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Bahasa Arab 3</td>
+        <td>
+          <div class="foto-dan-desc"> 
+            <img src="/images/foto-teuku-reza.png" alt="Foto Teuku Reza">
+            <p>Ust. Teuku Reza Pahlevi, B.A.</p>
+          </div>
+        </td>
+        <td>Mukaddimah Ilmu Tajwid - Bait 8</td>
+        <td>20%</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Hadits</td>
+        <td>
+          <div class="foto-dan-desc"> 
+            <img src="/images/foto-riza.png" alt="Foto Riza">
+            <p>Ust. Riza Afrizal, Lc. MA. </p>
+          </div>
+        </td>
+        <td>Mukaddimah Ilmu Tajwid - Bait 8</td>
+        <td>20%</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td>Tajwid</td>
+        <td>
+          <div class="foto-dan-desc"> 
+            <img src="/images/foto-teuku-reza.png" alt="Foto Teuku Reza">
+            <p>Ust. Teuku Reza Pahlevi, B.A.</p>
+          </div>
+        </td>
+        <td>Mukaddimah Ilmu Tajwid - Bait 8</td>
+        <td>20%</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<h2 class= "judul-2">C. Kepengasuhan</h2>
+<ol>
+<li>Kedisiplinan dan Ibadah Harian</li>
+</ol>
+<ul>
+<li>Salat Malam: Tingkat kehadiran rata-rata santri: 25%.</li>
+<li>Salat Berjamaah: Tingkat kehadiran rata-rata: 100%.</li>
+<li>Piket Asrama dan Kebersihan: Dilaksanakan setiap hari dalam dua waktu (pagi dan malam).</li>
+</ul>
+<ol start="2">
+<li>Kesehatan dan Keamanan Santri</li>
+</ol>
+<ul>
+<li>Kesehatan: Tidak ada santri yang sakit.</li>
+<li>Kedisiplinan dan Pelanggaran:
+<ul>
+<li>Terlambat bangun (terutama yang tidur di masjid): Sudah diberikan imbauan.</li>
+<li>Mandi saat azan: Sudah ditetapkan hukuman.</li>
+<li>Rambut gondrong: Sudah dicukur.</li>
+</ul>
+</li>
+</ul>
+<ol start="3">
+<li>Kegiatan Ekstrakurikuler dan Pembinaan Karakter</li>
+</ol>
+<ul>
+<li>Olahraga dan Olah Tubuh:
+<ul>
+<li>Bela diri Kempo dan tinju (boxing): Dilaksanakan setiap hari Ahad, kecuali pekan ketiga.</li>
+<li>Lari santai (jogging): Hanya diikuti oleh beberapa santri.</li>
+</ul>
+</li>
+<li>Motivasi:
+<ul>
+<li>Arahan dan penegasan komitmen dari Mudir bagi santri yang belum mencapai target.</li>
+</ul>
+</li>
+</ul>
+<ol start="4">
+<li>Kegiatan Asrama
+<ul>
+<li>Kerja bakti: Dilaksanakan setiap hari Ahad.</li>
+<li>Setoran hafalan kosakata (mufrodat): Dilaksanakan setiap malam, serta ujian pekanan setiap hari Jumat.</li>
+<li>Memasak lauk: Dilaksanakan untuk seluruh santri setiap hari Ahad; jadwal memasak disesuaikan dengan urutan jadwal piket harian.</li>
+</ul>
+</li>
+</ol>
+<hr>
+<h2 class= "judul-2">D. Keuangan</h2>
+<div class="table-responsive">
+  <table class="table-3">
+    <thead>
+      <tr>
+        <th>Kategori</th>
+        <th>Keterangan</th>
+        <th>Nominal</th>
+        <th>Saldo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+      <tr>
+        <td>Pemasukan</td>
+        <td>Infak</td>
+        <td>Rp1.000.000</td>
+        <td>Rp1.000.000</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<h2 class= "judul-2">E. Evaluasi Pimpinan Pesantren</h2>
+<ol>
+<li>Evaluasi Umum:</li>
+</ol>
+<ul>
+<li>Proses KBM Tahfidz dan Diniyah berjalan secara tertib dan sesuai kalender akademik yang telah ditetapkan, kecuali KBM Tauhid yang tertunda sebanyak 3 kali pertemuan dikarenakan pengajar mata kuliah tersebut ( ustd. Kamal) berhalangan hadir karena alasan cuti  dan menghadiri undangan kegiatan dauroh/pelatihan tahunan sebagai berikut :
+<ul>
+<li>pesantren Imam Bukhori solo diselenggarakan pada Ahad 28 juni s/d  kamis 2 juli 2026</li>
+<li>dauroh STAI Ali bin Abi Thalib radhiyallohu anhu di agro kusuma malang pada Senin 13 Juli s/d 17 juli 20206</li>
+</ul>
+</li>
+<li>Kedisiplinan dan kebersihan asrama perlu terus ditingkatkan melalui pengawasan ketat dari bagian kepengasuhan.</li>
+<li>Proses pemanggilan kepada 4 orang santri yang belum mencapai target hafalan bulanan telah dilaksanakan, Adapun santri yang bersangkutan sebagai berikut, Isa, syamil, Affan, Syakir</li>
+<li>Pengaturan pemanfaatan rumah kayu dengan tata tertib yang telah disosialisasikan yang akan dimanfaatkan oleh santri pengabdian yang bernama Oryza dan Tsumamah yang melanjutkan hafalan secara mandiri dengan ustadz Reza. Dan kedua santri tersebut kita berdayakan untuk kegiatan media masjid.</li>
+<li>Fasilitas asrama santri mengalami kendala atap bocor sehingga Ketika hujan lebat mengalami kebocoran yang cukup parah.
+<br></li>
+</ul>
+<ol start="2">
+<li>Rencana &amp; Target Bulan Depan:</li>
+</ol>
+<ul>
+<li>Pelaksanaan Munaqasyah/Ujian Tahfidz pekanan terlaksana sesuai jadwal.</li>
+<li>Perbaikan atap asrama telah disampaikan ke bagian sapras agar segera difollow up untuk mengantisipasi kerusakan lebih besar.</li>
+</ul>
+<!-- <div class="table-wrapper">
+
+| Kategori | Pemasukan (IDR) | Pengeluaran (IDR) | Saldo Akhir (IDR) |
+| :--- | ---: | ---: | ---: |
+| Operational & Listrik | 0 | 4.500.000 | -4.500.000 |
+| Donasi & Wakaf Kitab | 12.000.000 | 3.200.000 | +8.800.000 |
+| **Total Accumulation** | **12.000.000** | **7.700.000** | **+4.300.000** |
+
+</div> -->
+<blockquote>
+<p><strong>Catatan Tambahan:</strong> Laporan fisik dalam bentuk dokumen resmi bertanda tangan pimpinan dapat diunduh via tautan di bawah ini.</p>
+</blockquote>
+<p><a href="/pdf/laporan-resmi-agustus-2026.pdf">Download Laporan Resmi (PDF)</a></p>
+
+        </div>
+    </section>
+    <div class="container-btn-print no-print">
+        <button type="button" class="btn-print" onclick="window.print()">Print Laporan</button>
+    </div>
+
+    <div class="nav-bulan-container no-print">
+        
+            <span class="btn-nav-disabled"> &larr; Bulan Sebelumnya </span>
+        
+
+        <span class="bulan-aktif"> Juli 2026 </span>
+
+         
+            <a href="/laporan/agustus-2026/" class="btn-nav"> Agustus 2026 &rarr;</a>
+        
+    </div>
+   
+
+    </main>
+
+    
+    <footer id="kontak">
+        <p>&copy; Copyright by <span> Markaz Imam Samannudi </span> </p>
+        <div class="social">
+            <a href="https://www.instagram.com/markazimamsamannudi/?hl=id" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://www.threads.com/@markazimamsamannudi" target="_blank">
+                <i class="fa-brands fa-square-threads"></i>
+            </a>
+            <a href="https://chat.whatsapp.com/Lx3Qso2LVTuBqiolxyuqjY?mode=gi_t" target="_blank">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

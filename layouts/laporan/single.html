@@ -1,0 +1,305 @@
+{{ define "main" }}
+    <style>
+        
+        .judul {
+            text-align: center;
+            margin-top: -20px;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            max-height: 500px; 
+            overflow-y: auto;
+        }
+
+        table {
+            width:100%; 
+            border-collapse: collapse; margin-top: 20px;
+        }
+
+        thead tr {
+            background-color: #f8f9fa; border-bottom: 2px solid #dee2e6; 
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        thead th {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        thead th:nth-child(1) {
+            width: 20px;
+        }
+
+        thead th:nth-child(2) {
+            width: 20px;
+        }
+
+        thead th:nth-child(3) {
+            width: 500px;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        tbody td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody td img {
+            width: 100px; 
+            height: 100px; 
+            object-fit: cover; 
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .capaian img {
+            width: 300px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        tbody td .tercapai {
+            background: #2e7d32; 
+            color: white; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 12px;
+        }
+
+        tbody td .tidak-tercapai {
+            background: #FF4D4D; 
+            color: black; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 12px;
+        }
+
+        .judul-2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .table-2 thead th:nth-child(1){
+            width: 200px;
+        }
+
+        .table-2 thead th:nth-child(4){
+            width: 200px;
+        }
+        .table-2 thead th:nth-child(2){
+            width: 400px;
+        }
+        .table-2 thead th:nth-child(3){
+            width: 70px;
+        }
+
+        .table-3 thead th:nth-child(1) {
+            width: 400px;
+        }
+
+        .table-3 thead th:nth-child(2) {
+            width: 400px;
+        }
+
+        .laporan-content ul ul, .laporan-content ol ul {
+            padding-left: 35px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+
+        .laporan-content ol > li,
+        .laporan-content p:has(+ ol) {
+        margin-top: 24px;
+        }
+
+        .laporan-content > ol > li {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .container-btn-print {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .btn-print {
+            display: inline-block;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+            background-color: #1B4332;
+            border: 1px solid #1B4332;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .btn-print:hover {
+            background-color: #2d8560;
+            border-color: #2d8560;
+        }
+
+        .btn-print:active {
+            background-color: white;
+            color: black;
+            transform: translateY(1px);
+        }
+
+        @media print {
+        /* 1. Paksa halaman Landscape & Margin Nol untuk area maksimal */
+            @page {
+                size: A4 Landscape;
+                margin: 8mm;
+            } 
+
+            html, body, div, main, .container {
+                width: 100% !important;
+                max-width: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: visible !important;
+            }
+
+            main, .container, .laporan-content {
+                width: 80% !important;
+                max-width: 80% !important;
+                margin: 0 auto !important;
+                padding: 0 !important;
+                overflow: visible !important;
+            }
+
+            /* 2. Reset semua kontainer Bootstrap/Flexbox agar tidak menyempit */
+            .table-responsive, div[class*="table"], div[style*="overflow"] {
+                overflow: visible !important;
+                height: auto !important;
+                max-height: none !important;
+            }
+
+            /* 3. Buka area scrollbar tabel secara total */
+            table {
+                width: 100% !important;
+                table-layout: auto !important;
+                border-collapse: collapse !important;
+            }
+
+            thead tr {
+                position: static !important;
+            }
+
+            th, td {
+                white-space: normal !important;
+                padding: 6px !important;
+                font-size: 11px !important;
+            }
+
+            /* 4. Paksa tabel agar lebar normal dan kolom tidak gepeng */
+            button, nav, footer, .no-print, header {
+                display: none !important;
+            }
+
+            header, .header, h1, h2, h3, h4 {
+                position: static !important;
+                margin-top: 20px !important;
+                margin-bottom: 20px !important;
+                clear: both !important;
+            }
+
+            h1, h2, h3, .judul-1, .judul-2 {
+                page-break-after: avoid !important;
+                break-after: avoid !important;
+            }
+
+            tr {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+        }
+
+        .nav-bulan-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .btn-nav {
+            padding: 8px 16px;
+            background-color: #1B4332;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-nav:hover {
+            background-color: #2d6a4f;
+        }
+
+
+        .bulan-aktif {
+            font-weight: bold;
+            font-size: 16px;
+            color: #1B4332;
+        }
+
+    </style>
+
+    <div class="header-laporan" style="text-align: center; margin-bottom: 30px;">
+        <!-- Path gambar merujuk ke folder static/images/logo-pesantren.png -->
+        <img src="/images/logo-iijazy-background.png" alt="Logo Pesantren" style="max-width: 100px; height: auto; margin-bottom: 10px;">
+        <h2 style="margin: 0; text-transform: uppercase;">PESANTREN TAHFIZ IMAM IBNUL JAZARY</h2>
+        <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">Laporan Resmi Operasional & Kegiatan</p>
+        <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">{{ .Date | time.Format "January 2026" }}</p>
+        <hr style="margin-top: 15px; border: 0; border-top: 2px solid #333;">
+    </div>
+
+    <section class="container" style="padding: 40px 20px;">
+        <!-- <h1>{{ .Title }}</h1>
+        <small>{{ .Date.Format "02 January 2006" }}</small>
+        <hr> -->
+        <div class="laporan-content">
+            {{ .Content }}
+        </div>
+    </section>
+    <div class="container-btn-print no-print">
+        <button type="button" class="btn-print" onclick="window.print()">Print Laporan</button>
+    </div>
+
+    <div class="nav-bulan-container no-print">
+        {{ with .PrevInSection }}
+            <a href="{{ .RelPermalink }}" class="btn-nav"> &larr; {{ .Date | time.Format "January 2006" }}</a>
+        {{ else }}
+            <span class="btn-nav-disabled"> &larr; Bulan Sebelumnya </span>
+        {{ end }}
+
+        <span class="bulan-aktif"> {{ .Date | time.Format "January 2006" }} </span>
+
+         {{ with .NextInSection }}
+            <a href="{{ .RelPermalink }}" class="btn-nav"> {{ .Date | time.Format "January 2006" }} &rarr;</a>
+        {{ else }}
+            <span class="btn-nav-disabled">  Bulan Sebelumnya &rarr; </span>
+        {{ end }}
+    </div>
+   
+{{ end }}

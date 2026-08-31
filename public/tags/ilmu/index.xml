@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Ilmu on My New Hugo Project</title>
+		<link>http://localhost:1313/tags/ilmu/</link>
+		<description>Recent content in Ilmu on My New Hugo Project</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 11 Aug 2026 10:00:00 +0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/ilmu/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Keutamaan Menuntut Ilmu dalam Islam</title>
+				<link>http://localhost:1313/berita/futsal/</link>
+				<pubDate>Tue, 11 Aug 2026 10:00:00 +0700</pubDate>
+				<guid>http://localhost:1313/berita/futsal/</guid>
+				<description>&lt;p&gt;Ini adalah paragraf ringkasan atau isi dari artikel. Teks di sini yang nantinya akan diambil oleh kode &lt;code&gt;.RawContent&lt;/code&gt; dan dipotong otomatis sampai 120 karakter di halaman depan.&lt;/p&gt;&#xA;&lt;p&gt;Selanjutnya kamu tinggal tulis isi artikel lengkapmu di bawah sini seperti biasa memakai format Markdown&amp;hellip;&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

@@ -1,0 +1,113 @@
+{{ define "main" }}
+<style>
+    .tag-archive-container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .tag-archive-header {
+        margin-bottom: 25px;
+    }
+
+    .tag-archive-subtitle {
+        font-size: 0.9rem;
+        color: #666;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+
+    .tag-archive-title {
+        font-size: 2.2rem;
+        color: #00008B;
+        margin-top: 5px;
+    }
+
+    .tag-archive-divider {
+        margin: 20px 0;
+        border: 0;
+        border-top: 1px solid #eee;
+    }
+
+    .tag-card {
+        margin-bottom: 25px;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 20px;
+    }
+
+    .tag-card-title {
+        margin-bottom: 8px;
+        font-size: 1.4rem;
+    }
+
+    .tag-card-title a {
+        text-decoration: none;
+        color: #1a1a1a;
+        transition: color 0.2s ease;
+    }
+
+    .tag-card-title a:hover {
+        color: #00008B;
+    }
+
+    .tag-card-date {
+        color: #666;
+        display: block;
+        margin-bottom: 10px;
+        font-size: 0.85rem;
+    }
+
+    .tag-card-summary {
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 10px;
+    }
+
+    .back-btn {
+        display: inline-block;
+        margin-top: 20px;
+        color: #00008B;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .back-btn:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<section class="tag-archive-container">
+    <div class="tag-archive-header">
+        <span class="tag-archive-subtitle">Arsip Berita Tag</span>
+        <h1 class="tag-archive-title">#{{ .Title }}</h1>
+    </div>
+
+    <hr class="tag-archive-divider">
+
+    <div class="tag-list">
+        {{ range .Pages }}
+        <article class="tag-card">
+            <h2 class="tag-card-title">
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            
+            <small class="tag-card-date">
+                Dipublikasikan: {{ .Date.Format "02 January 2006" }}
+            </small>
+
+            <p class="tag-card-summary">
+                {{ .Summary }}
+            </p>
+
+            <a href="{{ .RelPermalink }}" style="color: #00008B; font-weight: bold; text-decoration: none;">
+                Baca Selengkapnya &rarr;
+            </a>
+        </article>
+        {{ else }}
+        <p>Belum ada berita dengan tag ini.</p>
+        {{ end }}
+    </div>
+
+    <a href="/berita/" class="back-btn">&larr; Kembali ke Semua Berita</a>
+</section>
+{{ end }}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Kegiatan on Web IIJAZY</title>
+		<link>http://localhost:1313/tags/kegiatan/</link>
+		<description>Recent content in Kegiatan on Web IIJAZY</description>
+		<generator>Hugo</generator>
+		<language>id-id</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 11 Aug 2026 10:00:00 +0700</lastBuildDate>
+		
+			<atom:link href="http://localhost:1313/tags/kegiatan/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Santri IIJAZY Angkatan 6 Mendapatkan Sanad Tuhfat Al-Athfal</title>
+				<link>http://localhost:1313/berita/santri-ang-6-mendapatkan-sanad-tuhfah/</link>
+				<pubDate>Tue, 11 Aug 2026 10:00:00 +0700</pubDate>
+				<guid>http://localhost:1313/berita/santri-ang-6-mendapatkan-sanad-tuhfah/</guid>
+				<description>&lt;p&gt;Santri atas nama Muhammad Ichsan dan Oryza Sa&lt;/p&gt;</description>
+			</item>
+	</channel>
+</rss>

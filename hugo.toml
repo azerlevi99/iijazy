@@ -1,0 +1,13 @@
+baseURL = 'https://example.org/'
+locale = 'id-id'
+title = 'Web IIJAZY'
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
