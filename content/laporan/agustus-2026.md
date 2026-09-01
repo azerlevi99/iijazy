@@ -216,8 +216,8 @@ draft: false
       </tr>
       <tr>
         <td> Kenpo </td>
-        <td></td>
-        <td></td>
+        <td>Kihon dari KATA FUKYUGATA</td>
+        <td>20%</td>
         <td>Sensei Syaiful</td>
         <td>4/4</td>
         <td>-</td>
@@ -232,8 +232,8 @@ draft: false
       </tr>
       <tr>
         <td> Komputer</td>
-        <td> </td>
-        <td></td>
+        <td>Pengenalaan perangkat, sistem operasi, Microsoft Office (Word, Excel dan Power Point).</td>
+        <td>20%</td>
         <td>Pak Amin</td>
         <td>2/2</td>
         <td>-</td>
