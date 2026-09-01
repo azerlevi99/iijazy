@@ -18,13 +18,19 @@ galeri_item:
     deskripsi: "Tangga menuju lantai 2 dilihat dari bawah"
   - foto: "foto-kamar-santri-1.jpeg"
     judul: "Asrama"
-    deskripsi: "Tangga menuju lantai 2 dilihat dari bawah"
+    deskripsi: "Kamar santri 1 di lantai 1"
   - foto: "foto-kamar-santri-2.jpeg"
     judul: "Asrama"
-    deskripsi: "Tangga menuju lantai 2 dilihat dari bawah" 
+    deskripsi: "Kamar santri 2 di lantai 1" 
+  - foto: "foto-kamar-mandi-2.jpeg"
+    judul: "Asrama"
+    deskripsi: "Kamar mandi dengan wc duduk" 
   - foto: "foto-kamar-mandi-1.jpeg"
     judul: "Asrama"
-    deskripsi: "Tangga menuju lantai 2 dilihat dari bawah"
+    deskripsi: "Kamar mandi dengan wc jongkok" 
+  - foto: "foto-jemuran.jpeg"
+    judul: "Asrama"
+    deskripsi: "Kamar mandi dengan wc jongkok" 
 ---
 
 <style>
@@ -61,7 +67,7 @@ galeri_item:
 
   .card-galeri img{
     width: 100%;
-    height: 500px;
+    height: 300px;
     object-fit: cover;
     object-position: center;
     transition: transform 0.3s ease;
