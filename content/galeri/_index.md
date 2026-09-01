@@ -19,6 +19,12 @@ galeri_item:
   - foto: "foto-kamar-santri-1.jpeg"
     judul: "Asrama"
     deskripsi: "Tangga menuju lantai 2 dilihat dari bawah"
+  - foto: "foto-kamar-santri-2.jpeg"
+    judul: "Asrama"
+    deskripsi: "Tangga menuju lantai 2 dilihat dari bawah" 
+  - foto: "foto-kamar-mandi-1.jpeg"
+    judul: "Asrama"
+    deskripsi: "Tangga menuju lantai 2 dilihat dari bawah"
 ---
 
 <style>

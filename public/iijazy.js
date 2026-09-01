@@ -12,6 +12,20 @@ function toggleGuru() {
     }
 }
 
+function toggleGuru() {
+    const hiddenCards = document.querySelectorAll('.hidden-card');
+    const btn = document.getElementById('btn-toggle-3');
+    hiddenCards.forEach(card => {
+        card.classList.toggle('show');
+    });
+    
+    if (hiddenCards[0].classList.contains('show')) {
+        btn.innerText = "Lihat Lebih Sedikit";
+    } else {
+        btn.innerText = "Lihat Selengkapnya";
+    }
+}
+
 window.addEventListener('scroll', function() {
     const scrollUpBtn = document.querySelector('.scroll-up');
     if (scrollUpBtn) {

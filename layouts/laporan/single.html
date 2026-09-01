@@ -3,7 +3,13 @@
         
         .judul {
             text-align: center;
-            margin-top: -20px;
+            margin-top: 30px;
+        }
+
+        .sub-judul {
+            text-align: center;
+            color: #666;
+            margin-bottom: 15px;
         }
 
         .table-responsive {
@@ -34,15 +40,23 @@
         }
 
         thead th:nth-child(1) {
-            width: 20px;
+            width: 15%;
         }
 
         thead th:nth-child(2) {
-            width: 20px;
+            width: 20%;
         }
 
         thead th:nth-child(3) {
-            width: 500px;
+            width: 5%;
+        }
+
+        thead th:nth-child(4) {
+            width: 20%;
+        }
+
+        thead th:nth-child(5) {
+            width: 10%;
         }
 
         tbody tr {
@@ -74,7 +88,7 @@
             color: white; 
             padding: 4px 8px; 
             border-radius: 4px; 
-            font-size: 12px;
+            font-size: 14px;
         }
 
         tbody td .tidak-tercapai {
@@ -82,7 +96,7 @@
             color: black; 
             padding: 4px 8px; 
             border-radius: 4px; 
-            font-size: 12px;
+            font-size: 14px;
         }
 
         .judul-2 {
@@ -91,41 +105,50 @@
         }
 
         .table-2 thead th:nth-child(1){
-            width: 200px;
+            width: 15%;
         }
 
-        .table-2 thead th:nth-child(4){
-            width: 200px;
-        }
         .table-2 thead th:nth-child(2){
-            width: 400px;
+            width: 25%;
         }
         .table-2 thead th:nth-child(3){
-            width: 70px;
+            width: 15%;
+        }
+        .table-2 thead th:nth-child(4){
+            width: 15%;
         }
 
         .table-3 thead th:nth-child(1) {
-            width: 400px;
+            width: 25%;
         }
 
         .table-3 thead th:nth-child(2) {
-            width: 400px;
+            width: 25%;
         }
 
-        .laporan-content ul ul, .laporan-content ol ul {
-            padding-left: 35px;
-            margin-top: 6px;
-            margin-bottom: 6px;
+        .table-3 thead th:nth-child(3) {
+            width: 25%;
         }
 
-        .laporan-content ol > li,
-        .laporan-content p:has(+ ol) {
-        margin-top: 24px;
+        .table-3 thead th:nth-child(4) {
+            width: 25%;
         }
 
-        .laporan-content > ol > li {
+        .laporan-content hr {
             margin-top: 20px;
             margin-bottom: 20px;
+        }
+
+        .laporan-content ul,
+        .laporan-content ol,
+        .laporan-content ul ul, 
+        .laporan-content ol ul {
+            padding-left: 35px;
+            margin-bottom: 4px;
+        }
+
+        .laporan-content ol > li > ul {
+            padding-left: 10px;
         }
 
         .container-btn-print {
@@ -135,6 +158,7 @@
             align-items: center;
             margin-bottom: 30px;
         }
+
 
         .btn-print {
             display: inline-block;
@@ -265,12 +289,12 @@
 
     </style>
 
-    <div class="header-laporan" style="text-align: center; margin-bottom: 30px;">
+    <div class="header-laporan" style="text-align: center;">
         <!-- Path gambar merujuk ke folder static/images/logo-pesantren.png -->
         <img src="/images/logo-iijazy-background.png" alt="Logo Pesantren" style="max-width: 100px; height: auto; margin-bottom: 10px;">
         <h2 style="margin: 0; text-transform: uppercase;">PESANTREN TAHFIZ IMAM IBNUL JAZARY</h2>
         <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">Laporan Resmi Operasional & Kegiatan</p>
-        <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">{{ .Date | time.Format "January 2026" }}</p>
+        <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">{{ .Date | time.Format "January 2006" }}</p>
         <hr style="margin-top: 15px; border: 0; border-top: 2px solid #333;">
     </div>
 
@@ -288,7 +312,7 @@
 
     <div class="nav-bulan-container no-print">
         {{ with .PrevInSection }}
-            <a href="{{ .RelPermalink }}" class="btn-nav"> &larr; {{ .Date | time.Format "January 2006" }}</a>
+            <a href="{{ .RelPermalink }}" class="btn-nav" target="_blank"> &larr; {{ .Date | time.Format "January 2006" }}</a>
         {{ else }}
             <span class="btn-nav-disabled"> &larr; Bulan Sebelumnya </span>
         {{ end }}
@@ -296,7 +320,7 @@
         <span class="bulan-aktif"> {{ .Date | time.Format "January 2006" }} </span>
 
          {{ with .NextInSection }}
-            <a href="{{ .RelPermalink }}" class="btn-nav"> {{ .Date | time.Format "January 2006" }} &rarr;</a>
+            <a href="{{ .RelPermalink }}" class="btn-nav" target="_blank"> {{ .Date | time.Format "January 2006" }} &rarr;</a>
         {{ else }}
             <span class="btn-nav-disabled">  Bulan Sebelumnya &rarr; </span>
         {{ end }}
