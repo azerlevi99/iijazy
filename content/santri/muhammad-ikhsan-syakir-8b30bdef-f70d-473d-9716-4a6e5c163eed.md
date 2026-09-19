@@ -18,4 +18,13 @@ laporan:
   target: "❌"
   nilai: "33"
   catatan_laporan: "Murojaah yang banyak. Bagi waktu sebaik mungkin untuk menghafal dan murojaah. Jika hafalan masih 1 juz, dalam sehari harus muter hafalannya. Murojaah bil ghoib, tanpa mushaf, kalo lupa baru lihat. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Al-Baqarah ayat 224"
+  persenan: "22%"
+  target: "❌"
+  nilai: "44%"
+  catatan_laporan: "Ini bulan kedua tidak tercapai targetnya. Ulang yang banyak. Wajib menghafal lebih dari 1 halaman untuk mengejar ketertinggalan. Waffaqakallah."
 ---

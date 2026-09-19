@@ -18,4 +18,13 @@ laporan:
   target: "✅"
   nilai: "92"
   catatan_laporan: "Mumtaz. Pertahankan prestasi dan murojaahnya. Usahakan semua hafalan harus diputar dalam 1 pekan."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Al-Ahzab ayat 30"
+  persenan: "100%"
+  target: "✅"
+  nilai: "44"
+  catatan_laporan: "Kualitas hafalannya tingkatkan kembali. Usahakan semua hafalan harus diputar dalam 1 pekan. Waffaqakallah."
 ---

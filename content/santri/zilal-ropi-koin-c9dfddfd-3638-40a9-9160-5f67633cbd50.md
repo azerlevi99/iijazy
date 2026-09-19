@@ -18,4 +18,13 @@ laporan:
   target: "✅"
   nilai: "100"
   catatan_laporan: "Mumtaz, pertahankan prestasinya dan hafalannya. Usahakan khatam dalam 1 tahun. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Al-A’raf ayat 87"
+  persenan: "101%"
+  target: "✅"
+  nilai: "94%"
+  catatan_laporan: "Mumtaz, pertahankan prestasinya dan hafalannya, walaupun ada penurunan di kualitas hafalannya. Usahakan khatam dalam 1 tahun. Waffaqakallah."
 ---

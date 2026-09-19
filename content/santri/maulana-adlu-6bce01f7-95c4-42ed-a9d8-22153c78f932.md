@@ -18,4 +18,13 @@ laporan:
   target: "✅"
   nilai: "67"
   catatan_laporan: "Mumtaz. Pertahankan flow menghafalnya. Perbaiki murojaahnya, dalam sepekan, seluruh hafalan harus muter. Baca dengan cepat (hadr), tapi dengan memperhatikan tajwid. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Al-Hajj ayat 46"
+  persenan: "48%"
+  target: "✅"
+  nilai: "56%"
+  catatan_laporan: "Perbaiki murojaahnya. Waffaqakallah."
 ---

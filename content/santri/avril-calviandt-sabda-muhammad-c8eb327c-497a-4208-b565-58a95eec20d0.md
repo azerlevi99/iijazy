@@ -18,4 +18,13 @@ laporan:
   target: "✅"
   nilai: "75"
   catatan_laporan: "Mumtaz, pertahankan prestasinya dan hafalannya. Hafalan harus diputar dalam 1 pekan. Usahakan khatam di semester ini. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Az-Zumar ayat 31"
+  persenan: "125%"
+  target: "✅"
+  nilai: "38%"
+  catatan_laporan: "Terdapat penurunan dalam kualitas hafalan. Murojaah bil ghoib sedikit lebih baik daripada binnazhar tapi banyak. Usahakan khatam di semester ini. Waffaqakallah."
 ---

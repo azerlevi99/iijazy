@@ -18,4 +18,13 @@ laporan:
   target: "❌"
   nilai: "42"
   catatan_laporan: "Perbanyak murojaah supaya tidak banyak tersendat di UKJ. Kejar yang tertinggal. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Al-Anbiya ayat 72"
+  persenan: "41%"
+  target: "✅"
+  nilai: "25%"
+  catatan_laporan: "Perbanyak murojaah kembali. Waffaqakallah."
 ---

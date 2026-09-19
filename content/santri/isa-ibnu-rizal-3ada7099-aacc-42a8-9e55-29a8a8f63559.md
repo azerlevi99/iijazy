@@ -18,4 +18,14 @@ laporan:
   target: "❌"
   nilai: "75"
   catatan_laporan: "Ditingkatkan kembali menghafalnya. Sehari minimal 3 halaman, dan kalo bisa 5 halaman untuk mengejar ketertinggalan. Perbanyak murojaah, agar tidak lama di UKJ. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. An-Nahl ayat 128"
+  persenan: "13%"
+  target: "❌"
+  nilai: "75%"
+  catatan_laporan: "Ditingkatkan kembali menghafalnya. Sehari minimal 4 halaman biar aman. Perbanyak murojaah, agar tidak lama di UKJ. Waffaqakallah."
+
 ---

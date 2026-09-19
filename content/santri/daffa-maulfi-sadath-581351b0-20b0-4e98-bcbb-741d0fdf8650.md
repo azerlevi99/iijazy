@@ -18,5 +18,14 @@ laporan:
   target: "✅"
   nilai: "83"
   catatan_laporan: "Mumtaz, murojaahnya ditingkatkan kembali. Usahakan semua hafalan harus diputar dalam 1 pekan. Usahakan khatam di semester ini. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Al-Lahb ayat 5"
+  persenan: "378%"
+  target: "✅"
+  nilai: "88%"
+  catatan_laporan: "Mumtaz. Murojaahnya tetap dijaga. Satu pekan harus khatam. Waffaqakallah."
 ---
 

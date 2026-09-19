@@ -18,4 +18,13 @@ laporan:
   target: "❌"
   nilai: "83"
   catatan_laporan: "Sedikit lagi tercapai targetnya. Perbanyak murojaah agar tidak terlalu lama tersendat di UKJ. Kejar yang tertinggal. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Al-Anbiya ayat 90"
+  persenan: "43%"
+  target: "✅"
+  nilai: "63%"
+  catatan_laporan: "Hafalannya mutqinkan lagi. Waffaqakallah."
 ---

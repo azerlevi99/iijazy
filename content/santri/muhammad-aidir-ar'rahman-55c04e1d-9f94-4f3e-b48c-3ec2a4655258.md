@@ -18,4 +18,13 @@ laporan:
   target: "✅"
   nilai: "100"
   catatan_laporan: "Mumtaz. Pertahankan prestasinya. Jika bisa, usahakan khatam dalam 1 tahun. Waffaqakallah."
+
+- bulan: Agustus
+  tanggal: "20/09/2026"
+  jenis_laporan: "Tahfiz"
+  rincian_laporan: "QS. Al-Maidah ayat 64"
+  persenan: "74%"
+  target: "✅"
+  nilai: "75%"
+  catatan_laporan: "Mumtaz. Pertahankan prestasinya. Bulan depan jangan sampai menurun lagi nilainya. Waffaqakallah."
 ---
