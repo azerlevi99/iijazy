@@ -192,7 +192,7 @@ draft: false
       </tr>
       <tr>
         <td> Bahasa Arab 1 </td>
-        <td>Mukaddimah Ilmu Sharf - Bab 4 Ar-Ruba'i Al-Mazid Al-Mulhaq bi Ar-Ruba'i Al-Mujarrad</td>
+        <td>Mukaddimah Ilmu Sharf - Bab 4 Ats-Tsulatsi Al-Mazid Al-Mulhaq bi Ar-Ruba'i Al-Mujarrad</td>
         <td> 31% </td>
         <td>Ust. Teuku Reza Pahlevi</td>
         <td>12/12</td>
@@ -257,7 +257,7 @@ draft: false
       <tr>
         <td> Tajwid </td>
         <td>Mukaddimah Ilmu Tajwid - Tuhfat Al-Athfal Bait 19</td>
-        <td>22%</td>
+        <td>31%</td>
         <td>Ust. Teuku Reza Pahlevi</td>
         <td>7/7</td>
         <td>-</td>
