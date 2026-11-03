@@ -208,7 +208,7 @@ draft: false
       </tr>
       <tr>
         <td> Hadits </td>
-        <td> Hadits 9- </td>
+        <td></td>
         <td>%</td>
         <td>Ust. Riza Afrizal, Lc. M.Ag.</td>
         <td>3/4</td>
@@ -216,7 +216,7 @@ draft: false
       </tr>
       <tr>
         <td> Kenpo </td>
-        <td>Kihon dari KATA FUKYUGATA</td>
+        <td></td>
         <td>20%</td>
         <td>Sensei Syaiful</td>
         <td>2/4</td>
@@ -232,7 +232,7 @@ draft: false
       </tr>
       <tr>
         <td> Komputer</td>
-        <td>Pengenalaan perangkat, sistem operasi, Microsoft Office (Word, Excel dan Power Point).</td>
+        <td></td>
         <td>20%</td>
         <td>Pak Amin</td>
         <td></td>
@@ -304,6 +304,7 @@ draft: false
    * 
    * 
    * 
+
 ---
 <h2 class= "judul-2">D. Keuangan</h2>
 <h5 class= "sub-judul">PJ: Ali</h5>
@@ -321,26 +322,26 @@ draft: false
       <tr>
         <td><span class="tercapai"> Pemasukan </span></td>
         <td>Infaq - Donatur Tetap</td>
-        <td></td>
-        <td></td>
+        <td>Rp</td>
+        <td>Rp</td>
       </tr>
       <tr>
         <td><span class="tercapai"> Pemasukan </span></td>
         <td>Bunga/Bagi Hasil Bank</td>
-        <td></td>
-        <td></td>
+        <td>Rp</td>
+        <td>Rp</td>
       </tr>
       <tr>
         <td><span class="tidak-tercapai"> Pengeluaran </span></td>
         <td>Operasional</td>
-        <td></td>
-        <td></td>
+        <td>Rp</td>
+        <td>Rp</td>
       </tr>
       <tr>
         <td><span class="tidak-tercapai"> Pengeluaran </span></td>
         <td>Makan Santri</td>
-        <td></td>
-        <td></td>
+        <td>Rp</td>
+        <td>Rp</td>
       </tr>
       <tr>
         <td><span class="tidak-tercapai"> Pengeluaran </span></td>
