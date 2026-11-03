@@ -279,31 +279,28 @@ draft: false
 <h5 class= "sub-judul">PJ: Muh Iskandar Sanre</h5>
 
 1. ⁠Kedisiplinan dan Ibadah Harian
-   * 
-   * 
-   * 
+   * Salat Malam: Tingkat kehadiran rata-rata santri: 42%.
+   * Salat Berjamaah: Tingkat kehadiran rata-rata: 100%.
+   * Piket Asrama dan Kebersihan: Dilaksanakan setiap hari dalam dua waktu (pagi dan malam).
 2. ⁠⁠Kesehatan dan Keamanan Santri
    * Kesehatan:
-     * 
-     * ⁠
-     * 
+     * 2-10 September: Nuskhi sakit semi tipes.
+     * ⁠8 September: Nuskhi cek lab, hasilnya normal, hanya kurang fit.
+     * 13-19 September: Aidir pulang kerumah cabut gigi, setelah itu sakit bertambah menjadi demam tinggi.
    * Kedisiplinan dan Pelanggaran:
-     * 
-     * 
-     * 
-     * 
+     * Ngobrol memakai bahasa indonesia pada waktu wajib bahasa arab: 3 santri dengan pemotongan yang berbeda beda sesuai hari, paling banyak 3 jam.
+     * 16 September: Seorang santri ketahuan main Mobile Legend di masjid memakai HP Tsumamah. Hukuman 2 pekan tidak menggunakan HP.
 3. ⁠Kegiatan Ekstrakurikuler dan Pembinaan Karakter
    * Olahraga dan Olah Tubuh:
-     * 
-     * 
-     * ⁠
+     * Bela diri Kempo dan tinju (boxing): Dilaksanakan setiap hari Ahad, kecuali pekan ketiga.
+     * ⁠Lari santai (jogging): Hanya diikuti oleh beberapa santri
+     * ⁠⁠Hari Ahad pekan ketiga: Hanya disakan menunggu jam 9.
    * Motivasi:
-     * ⁠
-     * 
+     * ⁠Arahan dan penegasan komitmen dari Mudir bagi santri yang belum mencapai target.
+     * Penertiban celana santri yang ketat dan panjangnya melewati mata kaki dengan pemotongan celana oleh Mudir.
 4. ⁠Kegiatan Asrama
-   * 
-   * 
-   * 
+   * Kerja bakti: Dilaksanakan setiap hari Ahad.
+   * Memasak lauk: Dilaksanakan untuk seluruh santri setiap hari Ahad; jadwal memasak disesuaikan dengan urutan jadwal piket harian.
 ---
 <h2 class= "judul-2">D. Keuangan</h2>
 <h5 class= "sub-judul">PJ: Ali</h5>

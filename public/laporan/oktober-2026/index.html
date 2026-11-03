@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Bulanan Kegiatan &amp; Keuangan - Agustus 2026</title>
+
+    
+    <link rel="shortcut icon" href="/images/logo-iijazy.png" type="image/x-icon">
+
+    
+   <link rel="stylesheet" href="/style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="/style.css">
+
+</head>
+<body id="beranda">
+
+    
+    <div class="my-navbar">
+            <div class="container">
+                <div class="navbar-box">
+                    <ul class="menu">
+                        <li><a href="/#tentang">Tentang</a></li>
+                        <li><a href="/#kelas">Kurikulum</a></li>
+                         <li><a href="/#artikel">Berita</a></li>
+                        <li><a href="/#kontak">Kontak</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+    <main>
+        
+    <style>
+        
+        .judul {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .sub-judul {
+            text-align: center;
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            max-height: 500px; 
+            overflow-y: auto;
+        }
+
+        table {
+            width:100%; 
+            border-collapse: collapse; margin-top: 20px;
+        }
+
+        thead tr {
+            background-color: #f8f9fa; border-bottom: 2px solid #dee2e6; 
+            text-align: left;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        thead th {
+            padding: 10px;
+            text-align: center;
+
+        }
+
+        thead th:nth-child(1) {
+            width: 15%;
+        }
+
+        thead th:nth-child(2) {
+            width: 20%;
+        }
+
+        thead th:nth-child(3) {
+            width: 5%;
+        }
+
+        thead th:nth-child(4) {
+            width: 20%;
+        }
+
+        thead th:nth-child(5) {
+            width: 10%;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid #dee2e6;
+        }
+        
+        tbody td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        tbody td img {
+            width: 100px; 
+            height: 100px; 
+            object-fit: cover; 
+            border-radius: 50%;
+            margin: 5px;
+        }
+
+        .capaian img {
+            width: 300px;
+            height: 100px;
+            border-radius: 10px;
+            margin: 5px;
+        }
+
+        tbody td .tercapai {
+            background: #2e7d32; 
+            color: white; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 14px;
+        }
+
+        tbody td .tidak-tercapai {
+            background: #FF4D4D; 
+            color: black; 
+            padding: 4px 8px; 
+            border-radius: 4px; 
+            font-size: 14px;
+        }
+
+        .judul-2 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .table-2 thead th:nth-child(1){
+            width: 15%;
+        }
+
+        .table-2 thead th:nth-child(2){
+            width: 25%;
+        }
+        .table-2 thead th:nth-child(3){
+            width: 15%;
+        }
+        .table-2 thead th:nth-child(4){
+            width: 15%;
+        }
+
+        .table-3 thead th:nth-child(1) {
+            width: 25%;
+        }
+
+        .table-3 thead th:nth-child(2) {
+            width: 25%;
+        }
+
+        .table-3 thead th:nth-child(3) {
+            width: 25%;
+        }
+
+        .table-3 thead th:nth-child(4) {
+            width: 25%;
+        }
+
+        .laporan-content hr {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .laporan-content ul,
+        .laporan-content ol,
+        .laporan-content ul ul, 
+        .laporan-content ol ul {
+            padding-left: 35px;
+            margin-bottom: 4px;
+        }
+
+        .laporan-content ol > li > ul {
+            padding-left: 10px;
+        }
+
+        .container-btn-print {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+
+        .btn-print {
+            display: inline-block;
+            padding: 8px 12px;
+            font-size: 14px;
+            font-weight: 500;
+            color: white;
+            background-color: #1B4332;
+            border: 1px solid #1B4332;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+
+        .btn-print:hover {
+            background-color: #2d8560;
+            border-color: #2d8560;
+        }
+
+        .btn-print:active {
+            background-color: white;
+            color: black;
+            transform: translateY(1px);
+        }
+
+        @media print {
+         
+            @page {
+                size: A4 Landscape;
+                margin: 8mm;
+            } 
+
+            html, body, div, main, .container {
+                width: 100% !important;
+                max-width: none !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: visible !important;
+            }
+
+            main, .container, .laporan-content {
+                width: 80% !important;
+                max-width: 80% !important;
+                margin: 0 auto !important;
+                padding: 0 !important;
+                overflow: visible !important;
+            }
+
+             
+            .table-responsive, div[class*="table"], div[style*="overflow"] {
+                overflow: visible !important;
+                height: auto !important;
+                max-height: none !important;
+            }
+
+             
+            table {
+                width: 100% !important;
+                table-layout: auto !important;
+                border-collapse: collapse !important;
+            }
+
+            thead tr {
+                position: static !important;
+            }
+
+            th, td {
+                white-space: normal !important;
+                padding: 6px !important;
+                font-size: 11px !important;
+            }
+
+             
+            button, nav, footer, .no-print, header {
+                display: none !important;
+            }
+
+            header, .header, h1, h2, h3, h4 {
+                position: static !important;
+                margin-top: 20px !important;
+                margin-bottom: 20px !important;
+                clear: both !important;
+            }
+
+            h1, h2, h3, .judul-1, .judul-2 {
+                page-break-after: avoid !important;
+                break-after: avoid !important;
+            }
+
+            tr {
+                page-break-inside: avoid !important;
+                break-inside: avoid !important;
+            }
+        }
+
+        .nav-bulan-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .btn-nav {
+            padding: 8px 16px;
+            background-color: #1B4332;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .btn-nav:hover {
+            background-color: #2d6a4f;
+        }
+
+
+        .bulan-aktif {
+            font-weight: bold;
+            font-size: 16px;
+            color: #1B4332;
+        }
+
+    </style>
+
+    <div class="header-laporan" style="text-align: center;">
+        
+        <img src="/images/logo-iijazy-background.png" alt="Logo Pesantren" style="max-width: 100px; height: auto; margin-bottom: 10px;">
+        <h2 style="margin: 0; text-transform: uppercase;">PESANTREN TAHFIZ IMAM IBNUL JAZARY</h2>
+        <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">Laporan Resmi Operasional & Kegiatan</p>
+        <p style="margin: 5px 0 0 0; color: #666; font-size: 14px;">September 2026</p>
+        <hr style="margin-top: 15px; border: 0; border-top: 2px solid #333;">
+    </div>
+
+    <section class="container" style="padding: 40px 20px;">
+        
+        <div class="laporan-content">
+            <h2 class= "judul">A. Capaian Tahfiz</h2>
+<h5 class= "sub-judul">PJ: Teuku Reza Pahlevi</h5>
+<div class="table-responsive">
+  <table>
+    <thead>
+      <tr>
+        <th>Foto</th>
+        <th>Nama</th>
+        <th>Angkatan</th>
+        <th>Hafalan Terakhir (dari QS. Al-Fatihah) </th>
+        <th>Capaian Target (1 bulan)</th>
+        <th>Keterangan Target</th>
+        <th>Nilai</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <img src="/images/foto-affan.jpg" alt="Foto Affan">
+        </td>
+        <td>Affan Ahzami Rahmat</td>
+        <td>8</td>
+        <td>QS. Ali 'Imran ayat 148</td>
+        <td>53%</td>
+        <td><span class= "tidak-tercapai">Tidak tercapai</span></td>
+        <td>30%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-avril.jpeg" alt="Foto avril">
+        </td>
+        <td>Avril Calviandt Sabda Muhammad</td>
+        <td>7</td>
+        <td>QS. At-Tahrim ayat 12</td>
+        <td>234%</td>
+        <td><span class= "tercapai">Tercapai</span></td>
+        <td>40%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-daffa.jpg" alt="Foto Daffa">
+        </td>
+        <td>Daffa Maulfi Sadath</td>
+        <td>7</td>
+        <td>QS. An-Nas ayat 6</td>
+        <td>268%</td>
+        <td><span class= "tercapai">Tercapai</span></td>
+        <td>80%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-hanzholah.jpg" alt="Foto Hanzholah">
+        </td>
+        <td>Hanzholah Anshori</td>
+        <td>7</td>
+        <td>QS. Al-Jatsiyah ayat 37</td>
+        <td>188%</td>
+        <td><span class="tercapai">Tercapai</span></td>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-isa.jpg" alt="Foto Isa">
+        </td>
+        <td>Isa Ibnu Rizal</td>
+        <td>7</td>
+        <td>QS. Al-Furqon ayat 67 </td>
+        <td>81%</td>
+        <td><span class="tidak-tercapai">Tidak Tercapai</span></td>
+        <td>5%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-adlu.jpg" alt="Foto Adlu">
+        </td>
+        <td>Maulana Adlu Insan Fathan</td>
+        <td>7</td>
+        <td>QS. As-Sajdah ayat 20</td>
+        <td>121%</td>
+        <td><span class="tercapai">Tercapai</span></td>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-samil.jpg" alt="Foto Samil">
+        </td>
+        <td>Muhamad Samil Basayef</td>
+        <td>7</td>
+        <td>QS. Al-Qashash ayat 43</td>
+        <td>101%</td>
+        <td><span class="tercapai">Tercapai</span></td>
+        <td>25%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-aidir.jpg" alt="Foto Aidir">
+        </td>
+        <td>Muhammad Aidir Ar Rahman</td>
+        <td>8</td>
+        <td>QS. Al-An’am ayat 110</td>
+        <td>128%</td>
+        <td><span class="tercapai">Tercapai</span></td>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-syakir.jpg" alt="Foto Syakir">
+        </td>
+        <td>Muhammad Ikhsan Syakir</td>
+        <td>8</td>
+        <td>QS. Ali 'Imran ayat 91</td>
+        <td>48%</td>
+        <td><span class="tidak-tercapai">Tidak Tercapai</span></td>
+        <td>20%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-nuskhi.jpg" alt="Foto Nuskhi">
+        </td>
+        <td>Nuskhi Khasyina</td>
+        <td>8</td>
+        <td>QS. Al-Maidah ayat 42</td>
+        <td>89%</td>
+        <td><span class="tidak-tercapai">Tidak Tercapai</span></td>
+        <td>15%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-zilal-asysyuhada.jpg" alt="Foto Zilal Asy-Syuhada">
+        </td>
+        <td>Zilal Assyuhada'</td>
+        <td>7</td>
+        <td>QS. Al-Qashash ayat 77</td>
+        <td>104%</td>
+        <td><span class="tercapai">Tercapai</span></td>
+        <td>35%</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/images/foto-zilal-ropikoin.jpg" alt="Foto Zilal Ropi Koin">
+        </td>
+        <td>Zilal Ropi Koin</td>
+        <td>8</td>
+        <td>QS. Maryam ayat 38</td>
+        <td>240%</td>
+        <td><span class="tercapai">Tercapai</span></td>
+        <td>85%</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<h2 class="judul-2">B. Capaian Mata Kuliah </h2>
+<h5 class= "sub-judul">PJ: Teuku Reza Pahlevi</h5>
+<div class="table-responsive">
+  <table class="table-2">
+    <thead>
+      <tr>
+        <th>Mata Kuliah</th>
+        <th>Pokok Pembahasan</th>
+        <th>Capaian Target (1 semester)</th>
+        <th>Guru</th>
+        <th>Jumlah Pertemuan</th>
+        <th>Catatan</th>
+      </tr>
+    </thead>
+    <tbody>
+     <tr>
+        <td> Tahfizh </td>
+        <td>Ang. 7: QS. Al-Anbiya ayat 45 - An-Nur ayat 58 <br> Ang. 8: QS. Ali 'Imran ayat 116 - An-Nisa ayat 113</td>
+        <td>(Individual, terlampir)</td>
+        <td>Ust. Ainun Hakim, S.Pd.</td>
+        <td>26/26</td>
+        <td>-</td>
+      </tr>
+       <tr>
+        <td> Tahfizh </td>
+        <td>Ang. 7: QS. Al-Anbiya ayat 45 - An-Nur ayat 58 <br> Ang. 8: QS. Ali 'Imran ayat 116 - An-Nisa ayat 113</td>
+        <td>(Individual, terlampir)</td>
+        <td>Ust. Teuku Reza Pahlevi</td>
+        <td>25/26</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Bahasa Arab 1 </td>
+        <td>Bab 5 Ats-Tsulatsi Al-Mazid Al-Mulhaq bi Ar-Ruba'i Al-Mujarrad - Idgham</td>
+        <td>40%</td>
+        <td>Ust. Teuku Reza Pahlevi</td>
+        <td>12/13</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Bahasa Arab 3 </td>
+        <td>Huruf tanshib al-Asma - Al-Af'al An-Naqishah</td>
+        <td>10%</td>
+        <td>Ust. Teuku Reza Pahlevi</td>
+        <td>9/9</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Hadits </td>
+        <td> Hadits 9- </td>
+        <td>%</td>
+        <td>Ust. Riza Afrizal, Lc. M.Ag.</td>
+        <td>5/5</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Kenpo </td>
+        <td>Kihon dari KATA FUKYUGATA</td>
+        <td>20%</td>
+        <td>Sensei Syaiful</td>
+        <td>2/3</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Komputer</td>
+        <td></td>
+        <td></td>
+        <td>Dr. Nawa Suwedi</td>
+        <td></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Komputer</td>
+        <td>Pengenalaan perangkat, sistem operasi, Microsoft Office (Word, Excel dan Power Point).</td>
+        <td>20%</td>
+        <td>Pak Amin</td>
+        <td></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Mufrodat 1</td>
+        <td></td>
+        <td></td>
+        <td>Ust. Muh Iskandar Sanre</td>
+        <td></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Mufrodat 3</td>
+        <td></td>
+        <td></td>
+        <td>Ust. Muh Iskandar Sanre</td>
+        <td></td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Tajwid </td>
+        <td>Tuhfat Al-Athfal Bait 20-39</td>
+        <td>64%</td>
+        <td>Ust. Teuku Reza Pahlevi</td>
+        <td>5/8</td>
+        <td>-</td>
+      </tr>
+      <tr>
+        <td> Tauhid</td>
+        <td>Awal Matan - Esensi dari Rabb</td>
+        <td>22%</td>
+        <td>Ust. Kamal Mustofa, Lc.</td>
+        <td>4/4</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<h2 class= "judul-2">C. Kepengasuhan</h2>
+<h5 class= "sub-judul">PJ: Muh Iskandar Sanre</h5>
+<ol>
+<li>⁠Kedisiplinan dan Ibadah Harian
+*
+*
+*</li>
+<li>⁠⁠Kesehatan dan Keamanan Santri
+<ul>
+<li>Kesehatan:
+*
+<ul>
+<li>⁠</li>
+<li></li>
+</ul>
+</li>
+<li>Kedisiplinan dan Pelanggaran:
+*
+*
+*
+*</li>
+</ul>
+</li>
+<li>⁠Kegiatan Ekstrakurikuler dan Pembinaan Karakter
+<ul>
+<li>Olahraga dan Olah Tubuh:
+*
+*
+<ul>
+<li>⁠</li>
+</ul>
+</li>
+<li>Motivasi:
+<ul>
+<li>⁠</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>⁠Kegiatan Asrama
+*
+*
+*</li>
+</ol>
+<hr>
+<h2 class= "judul-2">D. Keuangan</h2>
+<h5 class= "sub-judul">PJ: Ali</h5>
+<div class="table-responsive">
+  <table class="table-3">
+    <thead>
+      <tr>
+        <th>Kategori</th>
+        <th>Keterangan</th>
+        <th>Nominal</th>
+        <th>Saldo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="tercapai"> Pemasukan </span></td>
+        <td>Infaq - Donatur Tetap</td>
+        <td>Rp11.120.052</td>
+        <td>Rp66.381.978</td>
+      </tr>
+      <tr>
+        <td><span class="tercapai"> Pemasukan </span></td>
+        <td>Bunga/Bagi Hasil Bank</td>
+        <td>Rp37.526,24</td>
+        <td>Rp66.419.504</td>
+      </tr>
+      <tr>
+        <td><span class="tidak-tercapai"> Pengeluaran </span></td>
+        <td>Operasional</td>
+        <td>Rp700.000</td>
+        <td>Rp65.719.504</td>
+      </tr>
+      <tr>
+        <td><span class="tidak-tercapai"> Pengeluaran </span></td>
+        <td>Makan Santri</td>
+        <td>Rp13.211.500</td>
+        <td>Rp52.508.004</td>
+      </tr>
+      <tr>
+        <td><span class="tidak-tercapai"> Pengeluaran </span></td>
+        <td>Honorarium Ustaz</td>
+        <td>Rp7.250.000</td>
+        <td>Rp45.258.004</td>
+      </tr>
+      <tr>
+        <td><span class="tidak-tercapai"> Pengeluaran </span></td>
+        <td>Admin Bank</td>
+        <td>Rp24.005,25</td>
+        <td>Rp45.233.999</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>
+<h2 class= "judul-2">E. Evaluasi Pimpinan Pesantren</h2>
+<h5 class= "sub-judul">PJ: Kamal Mustofa</h5>
+<ol>
+<li>
+<p>Evaluasi Umum:</p>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+</li>
+<li>
+<p>Rencana &amp; Target Bulan Depan:
+*
+*</p>
+</li>
+</ol>
+<!-- <div class="table-wrapper">
+
+| Kategori | Pemasukan (IDR) | Pengeluaran (IDR) | Saldo Akhir (IDR) |
+| :--- | ---: | ---: | ---: |
+| Operational & Listrik | 0 | 4.500.000 | -4.500.000 |
+| Donasi & Wakaf Kitab | 12.000.000 | 3.200.000 | +8.800.000 |
+| **Total Accumulation** | **12.000.000** | **7.700.000** | **+4.300.000** |
+
+</div> -->
+
+        </div>
+    </section>
+    <div class="container-btn-print no-print">
+        <button type="button" class="btn-print" onclick="window.print()">Print Laporan</button>
+    </div>
+
+    <div class="nav-bulan-container no-print">
+        
+            <a href="/laporan/september-2026/" class="btn-nav" target="_blank"> &larr; September 2026</a>
+        
+
+        <span class="bulan-aktif"> September 2026 </span>
+
+         
+            <span class="btn-nav-disabled">  Bulan Sebelumnya &rarr; </span>
+        
+    </div>
+   
+
+    </main>
+
+    
+    <footer id="kontak">
+        <p>&copy; Copyright by <span> Pesantren Tahfiz Imam Ibnul Jazari </span> </p>
+        <div class="social">
+            <a href="https://maps.app.goo.gl/vucw2uDwgrBK2gRr5" target="_blank">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </a>
+            <a href="https://www.instagram.com/iijazy.bogor/?hl=id" target="_blank">
+                <i class="fa-brands fa-square-instagram"></i>
+            </a>
+            <a href="https://wa.me/6281354772088?text=Assalamualaikum%20Ustaz,%20saya%20ingin%20bertanya" target="_blank">
+                <i class="fa-brands fa-square-whatsapp"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
