@@ -1,6 +1,6 @@
 ---
 title: "Laporan Bulanan Kegiatan & Keuangan - Agustus 2026"
-date: 2026-09-01T17:00:00+07:00
+date: 2026-10-01T17:00:00+07:00
 periode: "Agustus 2026"
 draft: false
 ---
